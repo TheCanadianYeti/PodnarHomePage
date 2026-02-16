@@ -2,35 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Podnar Websites</title>
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      background: #f4f4f4;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      text-align: center;
-    }
-    a {
-      display: block;
-      margin: 12px 0;
-      font-size: 1.4rem;
-      color: #7a1c3a;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    a:hover {
-      color: #4c0013;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podnar Projects</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <h1>Welcome to Podnar Websites</h1>
-  <a href="https://marcus.podnar.ca">Marcus Site</a>
-  <a href="https://wine.podnar.ca">Wine List</a>
+
+<button class="toggle" onclick="toggleDark()">Toggle Dark Mode</button>
+
+<div class="container">
+  <h1>Podnar Projects</h1>
+  <div class="subtitle">A central hub for my web projects</div>
+
+  <div class="grid">
+    <a class="card" href="https://marcus.podnar.ca">
+      <h2>Marcus Site</h2>
+      <p>Personal portfolio and main website.</p>
+    </a>
+
+    <a class="card" href="https://wine.podnar.ca">
+      <h2>Wine List</h2>
+      <p>Interactive wine collection and catalog.</p>
+    </a>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
